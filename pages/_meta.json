@@ -1,0 +1,18 @@
+{
+  "index": {
+    "title": "Home",
+    "type": "page"
+  },
+  "lessons": {
+    "title": "Lessons",
+    "type": "page"
+  },
+  "demos": {
+    "title": "Demos",
+    "type": "page"
+  },
+  "guides": {
+    "title": "Guides",
+    "type": "page"
+  }
+}

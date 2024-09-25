@@ -1,0 +1,63 @@
+.card {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card h1 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-top: 0;
+  color: #666;
+}
+
+.card form {
+  margin-top: 20px;
+}
+
+.card label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card input,
+.card select,
+.card button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.card button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+.card button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.card pre {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin-top: 20px;
+}

@@ -1,0 +1,67 @@
+{
+  "urls": {
+    "lessons": {
+      "week1": {
+        "index": "/lessons/week1",
+        "web-terminologies.mdx": "/lessons/week1/web-terminologies"
+      },
+      "week2": {
+        "index": "/lessons/week2",
+        "html-css.mdx": "/lessons/week2/html-css"
+      },
+      "week3": {
+        "index": "/lessons/week3",
+        "interactive-js.mdx": "/lessons/week3/interactive-js"
+      },
+      "week4": {
+        "index": "/lessons/week4",
+        "databases-models.mdx": "/lessons/week4/databases-models"
+      },
+      "week5": {
+        "index": "/lessons/week5",
+        "python-server.mdx": "/lessons/week5/python-server"
+      },
+      "week6": {
+        "index": "/lessons/week6",
+        "apis-rest.mdx": "/lessons/week6/apis-rest"
+      },
+      "week7": {
+        "index": "/lessons/week7",
+        "rest-principles.mdx": "/lessons/week7/rest-principles"
+      },
+      "week8": {
+        "index": "/lessons/week8",
+        "web-security.mdx": "/lessons/week8/web-security"
+      },
+      "week9": {
+        "index": "/lessons/week9",
+        "user-sessions.mdx": "/lessons/week9/user-sessions"
+      },
+      "week10": {
+        "index": "/lessons/week10",
+        "api-development.mdx": "/lessons/week10/api-development"
+      },
+      "week11": {
+        "index": "/lessons/week11",
+        "html-evolution.mdx": "/lessons/week11/html-evolution"
+      },
+      "week12": {
+        "index": "/lessons/week12",
+        "full-stack-project.mdx": "/lessons/week12/full-stack-project"
+      }
+    },
+    "demos": {
+      "index": "/demos/index",
+      "dns-lookup": "/demos/dns-lookup",
+      "whats-my-ip": "/demos/whats-my-ip",
+      "request-inspector": "/demos/request-inspector",
+      "url-analyzer": "/demos/url-analyzer"
+    },
+    "guides": {
+      "index": "/guides/index",
+      "vscode": "/guides/vscode",
+      "database": "/guides/database",
+      "clean-code": "/guides/clean-code"
+    }
+  }
+}
