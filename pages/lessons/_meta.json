@@ -1,14 +1,14 @@
 {
   "week1": "Week 1: Basic Terminologies of Web",
-  "week2": "Week 2: HTML & CSS Basics",
-  "week3": "Week 3: JavaScript for Frontend",
-  "week4": "Week 4: Advanced JavaScript and DOM Manipulation",
-  "week5": "Week 5: Python Backend Development",
-  "week6": "Week 6: Working with Databases (MySQL)",
-  "week7": "Week 7: Building RESTful APIs",
-  "week8": "Week 8: Authentication and Security",
-  "week9": "Week 9: Session Management",
-  "week10": "Week 10: Advanced API Techniques",
-  "week11": "Week 11: Deployment and Scaling",
-  "week12": "Week 12: Full-stack Project Development"
+  "week2": "Week 2: Webpages Written in HTML and CSS",
+  "week3": "Week 3: Presentation Layer - View",
+  "week4": "Week 4: Models - Introduction to Databases",
+  "week5": "Week 5: Controllers - Business Logic",
+  "week6": "Week 6: APIs and REST APIs",
+  "week7": "Week 7: Backend Systems",
+  "week8": "Week 8: Application Frontend",
+  "week9": "Week 9: Application Security",
+  "week10": "Week 10: Testing of Web Applications",
+  "week11": "Week 11: HTML Evolution and Beyond HTML",
+  "week12": "Week 12: Application Deployment"
 }
