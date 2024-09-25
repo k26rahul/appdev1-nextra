@@ -1,0 +1,21 @@
+import React from 'react';
+import Head from 'next/head';
+import DnsLookup from '@/components/DnsLookup';
+
+<div>
+  <Head>
+    <title>DNS Lookup Tool</title>
+    <meta
+      name="description"
+      content="A tool to query DNS records for a domain."
+    />
+  </Head>
+  <DnsLookup />
+</div>
+
+- **A**: Maps domain to IPv4.
+- **AAAA**: Maps domain to IPv6.
+- **CNAME**: Alias of a domain.
+- **MX**: Mail server for the domain.
+- **PTR**: Maps IP to domain.
+- **TXT**: Text info about the domain.

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import styles from './DnsLookup.module.css'; // Import the CSS module
+import styles from './DnsLookup.module.css';
 
 const DnsLookup = () => {
-  const [domain, setDomain] = useState('');
+  const [domain, setDomain] = useState('google.com');
   const [recordType, setRecordType] = useState('A');
   const [result, setResult] = useState('');
   const [loading, setLoading] = useState(false);
@@ -58,7 +58,7 @@ const DnsLookup = () => {
           {loading ? 'Querying...' : 'Query DNS'}
         </button>
       </form>
-      <pre>{result}</pre>
+      {result && <pre>{result}</pre>}
     </div>
   );
 };
