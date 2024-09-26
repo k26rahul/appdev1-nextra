@@ -1,7 +1,198 @@
-# web-terminologies
+# Web Terminologies
 
-File URL: /lessons/week1/web-terminologies
+## Lectures
 
-No content available in this file.
+### L1.1: What is an App?
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+- **I. Introduction to Applications**
+
+  - App: software/program.
+
+- **II. Types of Applications**
+
+  - Desktop Applications
+    - Standalone.
+    - Notepad, VS Code, Chrome, VLC, WhatsApp Desktop.
+  - Mobile Applications
+    - Apps downloaded from app stores (Play Store).
+    - Better Internet connectivity.
+    - Constraints: memory, processing power, battery.
+    - WhatsApp Mobile app.
+  - Web Applications
+    - Dynamic and interactive.
+    - Common platform across OS.
+    - WhatsApp Web (web.whatsapp.com).
+  - Embedded Applications
+    - Smart fridge, Smart POS system.
+
+- **III. Development Frameworks**
+
+  - Software Development Kits (SDKs)
+    - Tools that simplify application development; reduce low-level details.
+    - .NET, Electron, React Native, Flutter, JavaFX.
+  - Cross-Platform Development
+    - Develop for multiple OS.
+
+- **IV. User Interaction**
+  - Graphical User Interface (GUI)
+    - Uses mouse or touch; has icons and visual elements like buttons.
+  - Command Line Interface (CLI)
+    - Terminal for commands.
+  - Other Interaction Mechanisms
+    - Voice, Gestures.
+
+### L1.2: Components of an App
+
+- **Storage**
+
+  - Where data is stored (cloud, local).
+  - Gmail uses cloud storage.
+
+- **Computation**
+
+  - Manipulating data.
+  - Email indexing for search.
+
+- **Presentation**
+
+  - Displaying data to users.
+  - Formatting, rendering emails.
+
+- **Platforms**
+
+  - Desktop
+    - Input: keyboard, mouse.
+    - Desktop paradigm (files, folders).
+  - Mobile
+    - Input: touchscreen, voice, sensors.
+    - Constraints: small self-contained apps, memory, processing power, battery.
+  - Web-Based
+    - Storage: data centers, access anywhere.
+  - Embedded
+    - Single-function devices.
+    - Smart fridge, smart watch.
+
+- **Examples of Embedded Devices**
+  - Smart refrigerator (grocery orders).
+  - Smart microwave oven.
+  - Smart TV.
+
+### L1.3: Client-Server and Peer-to-Peer Architecture
+
+- **Client-Server Architecture**
+
+  - Components: server, clients, network.
+  - Server stores data, responds to requests.
+  - Clients request data based on user interactions.
+  - Network connects clients to server.
+  - If the central server fails, the entire system is down.
+  - Examples:
+    - Web servers: serve content to clients.
+    - Email servers: store emails; clients display them.
+    - Database servers: provide data to client applications.
+    - Gmail Android app: client displays emails stored on the server.
+    - Browsers: clients that request and display web content.
+
+- **Peer-to-Peer Architecture**
+  - All nodes are peers, no clear client/server distinction.
+  - Example: BitTorrent allows users to both download and upload files.
+  - Tolerant to failures; new nodes can be introduced without a central controller.
+  - Examples:
+    - BitTorrent: file sharing.
+    - Blockchain: distributed trust systems.
+    - Distributed file systems: data stored across devices, often encrypted.
+    - WebRTC: enables peer-to-peer connections for real-time communication.
+
+### L1.4: Software Architectures
+
+- **Design Patterns**
+
+  - Reusable solutions to common software problems.
+  - Save time, improve code quality.
+
+- **Example of MVC (Model-View-Controller)**
+
+  - **Model**: Storage part of application (e.g., emails, messages, files).
+    - Indexed for manipulation, stored in database or memory.
+  - **View**: Presentation part of application.
+    - Multiple views for the same data.
+    - Can be audio or other formats.
+  - **Controller**: Business logic part of application.
+    - Manages user interactions.
+    - Manipulates model (e.g., sort, delete).
+
+- **Feedback Loop**
+  - User manipulates model via controller.
+  - Model updates view.
+
+```
+     +-------------+
+     |    View     |
+     +-------------+
+           ↑
+           | Updates
+           |
+     +-------------+
+     | Controller  |
+     +-------------+
+           |
+           | Manipulates
+           ↓
+     +-------------+
+     |    Model    |
+     +-------------+
+```
+
+- **Origins of MVC**
+
+  - Developed in Smalltalk (1979).
+  - Separates concerns in complex apps.
+
+- **Alternatives to MVC**
+
+  - Other patterns exist (e.g., Model View Adapter, Model View Presenter).
+  - Specific use cases.
+
+- **Course Focus**
+  - Web-based app development.
+  - Client-server architecture.
+  - MVC.
+
+### L1.5: Introduction to the Web
+
+- Introduction to the web as a platform, historical context, and networking concepts
+
+  - **Cross-platform**: Works on any OS. Any device. Common interface for users.
+  - **Efficiency**: Optimizes costs, storage, networking.
+
+- Evolution of Networks
+
+  - **Circuit-switched networks**: Direct path for calls. Inefficient use of resources.
+  - **Packet-switched networks**: Data split into packets. Flexible routing. Works for all data types: voice, text, video.
+
+- Internet History
+
+  - **ARPANET**: Early network. Nodes connected. Many protocols incompatible.
+  - **Internet Protocol (IP)**: Standard communication method. Connects different networks.
+  - **TCP/IP**: Reliable data transfer. Ensures flow control. Acknowledges received packets.
+
+- DNS and Names
+
+  - **IP Addresses**: Unique numerical identifiers. Hard to remember. Example: 192.168.1.1. It's 32 bits.
+  - **DNS**: Domain Name System. Translates names (e.g., google.com) to IP addresses. Simplifies user access.
+
+- Birth of the Web
+  - **Hypertext**: Text links to other documents. Forms interconnected web of information.
+  - **World Wide Web (WWW)**: Created by Tim Berners-Lee in 1989. Uses hyperlinks for navigation.
+
+### L1.6: How does the Web work?
+
+### L1.7: Simple Web Server
+
+### L1.8: What is a Protocol?
+
+### L1.9: Performance of a Website
+
+### Tutorial 1.1: Application Development using Replit
+
+### Screencast 1.1: How to serve HTML files on LAN?

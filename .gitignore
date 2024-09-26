@@ -34,3 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+resources/summary1.md
+resources/summary2.md
+resources/summary3.md
+resources/summary0.md
