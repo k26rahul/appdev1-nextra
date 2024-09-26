@@ -1,7 +1,7 @@
 import Footer from '@/components/Footer';
 
 export default {
-  logo: <span>📘 AppDev 1 - Web Development Course</span>,
+  logo: <span>📑 AppDev 1 - Web Development Course</span>,
   project: {
     link: 'https://github.com/k26rahul/appdev1-nextra',
   },
@@ -19,7 +19,7 @@ export default {
       />
       <link
         rel="icon"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭕</text></svg>"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📑</text></svg>"
       />
     </>
   ),
