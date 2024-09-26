@@ -1,0 +1,21 @@
+import React from 'react';
+import Head from 'next/head';
+import IPLookup from '@/components/IPLookup';
+
+<Head>
+  <title>IP Lookup Tool</title>
+  <meta
+    name="description"
+    content="A tool to look up detailed information about your IP address including location, ISP, and other data."
+  />
+</Head>
+<IPLookup />
+
+**API 1 - [IPInfo](https://ipinfo.io/json):**  
+Provides detailed information such as city, region, country, coordinates, organization (ISP), postal code, and timezone.
+
+**API 2 - [IPify](https://api.ipify.org/?format=json):**  
+A simple API that returns only the user's IP address.
+
+**API 3 - [MyIP](https://api.myip.com/):**  
+Retrieves the IP address and country of the user, but this API is not implemented in the demo due to CORS (Cross-Origin Resource Sharing) restrictions.

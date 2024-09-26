@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './DNSLookup.module.css';
+import styles from './styles.module.css';
 
 export default function DNSLookup() {
   const [domain, setDomain] = useState('google.com');

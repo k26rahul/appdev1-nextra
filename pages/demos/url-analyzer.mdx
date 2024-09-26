@@ -1,0 +1,38 @@
+import URLAnalyzer from "@/components/URLAnalyzer";
+
+<div className="my-5">
+  <URLAnalyzer />
+</div>
+
+### Example Domain
+
+**URL:** `https://www.example.com:8080/path/to/resource?param1=value1&param2=value2#fragment`
+
+### Components
+
+1. **Scheme (Protocol)**: Indicates how data is transmitted.  
+   **Examples**: `http`, `https`, `ftp`.
+
+2. **Subdomain**: Prefix for organizing sections.  
+   **Examples**: `www`, `blog`.
+
+3. **Domain Name**: Main name of the website.  
+   **Example**: `example`.
+
+4. **Top-Level Domain (TLD)**: Suffix indicating type or location.  
+   **Examples**: `.com`, `.org`.
+
+5. **Port**: Numerical value for data transfer. Defaults: 80 (HTTP), 443 (HTTPS).
+
+6. **Path**: Location of the resource.  
+   **Example**: `/path/to/resource`.
+
+7. **Query String**: Key-value pairs for parameters, starting with `?`.  
+   **Format**: `param1=value1&param2=value2`.
+
+8. **Fragment**: Reference to a specific part, starting with `#`.
+
+### Origin
+
+Combines the scheme, domain, and port (if specified).  
+**Example**: `https://www.example.com:8080`@/components/URLAnalyzer/URLAnalyzer
