@@ -193,7 +193,6 @@
 
 ### L1.6: How does the Web work?
 
-
 - **Servers**: Computer programs that listen on specific ports, handle requests, and send responses. They run continuously, waiting for clients.
 
 - **Ports**: Like doors in a house (with IP as the address). Each port handles a different service (e.g., HTTP on port 80, HTTPS on port 443).
@@ -218,18 +217,42 @@
 
 - **Hops**: Each router packet passes through is called a hop. More hops mean longer delays. Traceroute shows the path packets take.
 
+- **URL: https://www.example.com:8080/path/to/resource?param1=value1&param2=value2#fragment**
+
+  - **Scheme (Protocol)**: Defines the method of data transmission.  
+    **Examples**: http (HyperText Transfer Protocol), https (secure), ftp (File Transfer Protocol).
+
+  - **Subdomain**: A prefix to categorize sections of a website.  
+    **Examples**: www (World Wide Web), blog (for blog section).
+
+  - **Domain Name**: The primary name identifying the website.  
+    **Example**: example (unique identifier).
+
+  - **Top-Level Domain (TLD)**: The suffix that specifies the type or geographical area of the website.  
+    **Examples**: .com (commercial), .org (organization).
+
+  - **Port**: A numerical identifier for specific data transmission paths.  
+    **Defaults**: 80 (HTTP standard), 443 (HTTPS standard).
+
+  - **Path**: The specific location of a resource on the server.  
+    **Example**: /path/to/resource (file location).
+
+  - **Query String**: Contains key-value pairs for parameters in the URL, starting with ?.  
+    **Format**: param1=value1&param2=value2 (used for dynamic data).
+
+  - **Fragment**: A reference to a specific section within the resource, starting with #.
+
+  - **Origin**: The combination of the scheme, domain, and port (if specified).  
+  **Example**: https://www.example.com:8080 (base URL for requests).
+
+
 ### L1.7: Simple Web Server
 
 - **Creating Servers**:
   1. `python -m http.server`: Serves files, shows directory listing if no index file.
   2. Lecture server: Uses Netcat (Linux) for simple communication.
 
-- **Clients**:
-  1. **Chrome**: Web browser for accessing content.
-  2. **curl (PowerShell)**: Windows terminal tool; doesn't work with lecture server.
-  3. **curl (Git Bash)**: Error encountered with lecture server.
-  4. **curl (Ubuntu in WSL)**: Successfully connects to the lecture server.
-  5. **Postman**: Software for testing APIs, user-friendly interface.
+- **Clients**: Chrome, curl (PowerShell), curl (Git Bash), Postman
 
 - **Content-Type**: `text/html` indicates HTML content in the body. 
   - **MIME Type**: Format is type/subtype (e.g., `text/html`, `image/png`); `*/*` means any type.
