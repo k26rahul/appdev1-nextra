@@ -31,15 +31,14 @@
     - Smart fridge, Smart TV, Smart POS systems, digital car dashboards.
 
 - **III. Development Frameworks**
+- Libraries, frameworks, SDKs help developers focus on priorities, avoiding low-level details.
 
-  - **Libraries**
-    - Collection of utilities, functions, tools.
-  - **Frameworks**
-    - All-in-one package with architectural principles.
-  - **SDKs**
-    - Similar to frameworks but on a larger scale.
-
-  - Libraries, frameworks, SDKs help developers focus on priorities, avoiding low-level details.
+- **Libraries**:
+  - Collection of utilities, functions, tools (e.g., React.js, Bootstrap, W3.CSS, Gradio).
+- **Frameworks**:
+  - All-in-one package with architectural principles (e.g., Next.js, Streamlit).
+- **SDKs**:
+  - Similar to frameworks but on a larger scale (e.g., Electron, .NET, Java Spring).
 
 - **IV. User Interaction**
 
