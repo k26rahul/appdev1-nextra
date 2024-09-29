@@ -166,33 +166,132 @@
 
 - Introduction to the web as a platform, historical context, and networking concepts.
 
-  - **Cross-platform**: Works on any OS, any device. Common interface for users.
-  - **Efficiency**: Optimizes costs, storage, networking.
+- **Cross-platform**: Works on any OS, any device. Common interface for users. Access from anywhere.
 
 - **Evolution of Networks**
 
-  - **Circuit-switched networks**: Direct path for calls. Inefficient.
-  - **Packet-switched networks**: Data split into packets. Flexible routing.
+  - **Circuit-switched networks**: Dedicated path between sender and receiver. Used in early phone systems. Wastes resources when not in use.
+  - **Packet-switched networks**: Data split into packets (header + body). More efficient. Packets take different routes and reassemble at the destination.
 
 - **Internet History**
 
-  - **ARPANET**: Early network with incompatible protocols.
-  - **Internet Protocol (IP)**: Standard communication method.
-  - **TCP/IP**: Reliable data transfer.
+  - **ARPANET**: Developed by universities and military (e.g., CERN). First successful packet-switched network.
+  - **Internet**: Global network of networks. Unified under common protocols (IP).
+  - **Internet Protocol (IP)**: Defines how devices communicate; splits data into packets.
+  - **TCP/IP**: Ensures reliable data transfer. TCP handles packet sequencing, retries; IP handles addressing and routing.
+  - **UDP**: Faster but less reliable. Used in live streams, gaming where speed is priority.
 
 - **DNS and Names**
 
-  - **IP Addresses**: Unique numerical identifiers. Example: 192.168.1.1.
-  - **DNS**: Translates domain names (e.g., google.com) to IP addresses.
+  - **IP Addresses**: Unique identifiers for devices (IPv4: 32-bit, 0-255; IPv6: newer format for growing number of devices).
+  - **DNS**: Like a phonebook for the internet. Maps human-friendly names (e.g., google.com) to IPs. IPs can change without affecting users.
 
 - **Birth of the Web**
 
-  - **Hypertext**: Text links to other documents.
-  - **World Wide Web (WWW)**: Created by Tim Berners-Lee in 1989. Uses hyperlinks.
+  - **Hypertext**: Text with clickable links to other documents. Foundation of the web.
+  - **World Wide Web (WWW)**: Created by Tim Berners-Lee in 1989. Made the internet usable by everyone. Combines hyperlinks, browsers, and URLs.
+
 
 ### L1.6: How does the Web work?
 
+
+- **Servers**: Computer programs that listen on specific ports, handle requests, and send responses. They run continuously, waiting for clients.
+
+- **Ports**: Like doors in a house (with IP as the address). Each port handles a different service (e.g., HTTP on port 80, HTTPS on port 443).
+
+- **Protocols**: Define how clients request and servers respond. Both agree on a protocol for communication. Example: **HTTP** (Hypertext Transfer Protocol) for web traffic.
+
+- **IANA (Internet Assigned Numbers Authority)**: Manages global IP address allocation, DNS root zones.
+
+- **RIRs (Regional Internet Registries)**: Distribute IP addresses in regions (e.g., ARIN for North America, RIPE for Europe, APNIC for Asia-Pacific).
+
+- **ISPs (Internet Service Providers)**: Provide internet access to users. They assign IPs from RIR pools. Examples: Jio and Airtel in India.
+
+- **Submarine Cables**: Fiber optic cables under oceans. Carry 99% of global data traffic. Connect continents for faster data transfer.
+
+- **What Happens When You Enter google.com**:
+  
+  1. **DNS Lookup**: Browser queries DNS to get Google’s IP.
+  2. **Packet Journey**: Data packet created with your IP and Google’s IP in header.
+  3. **Routing**: Packet hops through routers, possibly across oceans via submarine cables.
+  4. **Google Server**: Receives request, processes it, and sends back data.
+  5. **Receive and Display**: Browser renders webpage after receiving data packets.
+
+- **Hops**: Each router packet passes through is called a hop. More hops mean longer delays. Traceroute shows the path packets take.
+
 ### L1.7: Simple Web Server
+
+- **Creating Servers**:
+  1. `python -m http.server`: Serves files, shows directory listing if no index file.
+  2. Lecture server: Uses Netcat (Linux) for simple communication.
+
+- **Clients**:
+  1. **Chrome**: Web browser for accessing content.
+  2. **curl (PowerShell)**: Windows terminal tool; doesn't work with lecture server.
+  3. **curl (Git Bash)**: Error encountered with lecture server.
+  4. **curl (Ubuntu in WSL)**: Successfully connects to the lecture server.
+  5. **Postman**: Software for testing APIs, user-friendly interface.
+
+- **Content-Type**: `text/html` indicates HTML content in the body. 
+  - **MIME Type**: Format is type/subtype (e.g., `text/html`, `image/png`); `*/*` means any type.
+
+- **HTTP Request Example**:
+  - **Line 1**: `GET /music-app/trending.html HTTP/1.1`
+    - **Method**: GET
+    - **Path**: `/music-app/trending.html`
+    - **HTTP Version**: HTTP/1.1
+
+- **Netcat**: Known as "nc." Tool for device communication over the internet.
+
+- **Terminals**:
+  - **PowerShell**: Windows built-in terminal.
+  - **Git Bash**: Lightweight Linux-like terminal for Git.
+  - **MSYS2**: Full-scale Linux environment (virtual).
+
+- **User-Agent Example (Chrome)**:
+  - `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36`
+
+- **curl Request Analysis**:
+```bash
+$ curl -v localhost:8000/msg.txt
+* Host localhost:8000 was resolved.
+* IPv6: ::1
+* IPv4: 127.0.0.1
+*   Trying [::1]:8000...
+* Connected to localhost (::1) port 8000
+* using HTTP/1.x
+> GET /msg.txt HTTP/1.1
+> Host: localhost:8000
+> User-Agent: curl/8.10.1
+> Accept: */*
+>
+* HTTP 1.0, assume close after body
+< HTTP/1.0 200 OK
+< Server: SimpleHTTP/0.6 Python/3.12.6
+< Date: Sun, 29 Sep 2024 12:41:16 GMT
+< Content-type: text/plain
+< Content-Length: 44
+< Last-Modified: Sun, 29 Sep 2024 12:40:58 GMT
+<
+Hello Vidu, You are Rahul's favorite person.
+* Connection closed.
+```
+
+- **Request Headers**:
+  - **Host**: `localhost:8000`
+  - **User-Agent**: `curl/8.10.1`
+  - **Accept**: `*/*`
+
+- **Response Headers**:
+  - **HTTP/1.0 200 OK**: Indicates success.
+  - **Server**: `SimpleHTTP/0.6 Python/3.12.6`
+  - **Date**: `Sun, 29 Sep 2024 12:41:16 GMT`
+  - **Content-Type**: `text/plain`
+  - **Content-Length**: `44`
+  - **Last-Modified**: `Sun, 29 Sep 2024 12:40:58 GMT`
+
+- **Response Body**:
+  - `Hello Vidu, You are Rahul's favorite person.`
 
 ### L1.8: What is a Protocol?
 
