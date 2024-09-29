@@ -295,8 +295,50 @@ Hello Vidu, You are Rahul's favorite person.
 
 ### L1.8: What is a Protocol?
 
+- **Definition**: Set of rules for communication between devices.
+
+- **HTTP Methods**:
+  - **GET**: Retrieve data; data in URL.
+  - **POST**: Send data to server.
+  - **PUT**: Update existing data.
+  - **DELETE**: Remove data.
+  - **PATCH**: Partially update data.
+
+- **CRUD Example**: Messaging context (Create, Read, Update, Delete).
+  - `/messages`: Retrieve messages.
+  - `/messages/:id`: Get specific message.
+  - `/messages`: Create message (POST).
+  - `/messages/:id`: Update message (PUT).
+  - `/messages/:id`: Delete message (DELETE).
+
+- **HTTP Versions**:
+  - **HTTP/1.1**: Standard version; persistent connections.
+  - **HTTP/2**: Multiplexing, binary protocol for performance.
+  - **HTTP/3**: Based on QUIC; faster, reliable connections.
+
+- **Web Generations**:
+  - **Web 1.0**: Static content; read-only web.
+  - **Web 2.0**: Interactive content; user-generated data, social media.
+
+
 ### L1.9: Performance of a Website
+
+- **Latency**: Data travels at light speed. 1000 km in 5 ms. If server is 10,000 km away, request takes 50 ms; same for response. Total round-trip time (RTT) = 100 ms. Client can send 10 requests per second. More distance = higher RTT, fewer requests.
+
+- **Bandwidth**: If a request is 150 KB and you want to serve 1 million users, needed bandwidth = 1 million * 150 KB = 150,000,000 KB = 150 GB. Measures data transfer rate to/from server.
+
+- **Memory**: For 1 crore (10 million) users watching IPL live, if each uses 5 MB, total RAM required = 10 million * 5 MB = 50,000,000 MB = 50,000 GB = 50 TB.
+
+- **Server Hardware**: Requires powerful processors and cooling systems for optimal performance.
 
 ### Tutorial 1.1: Application Development using Replit
 
-### Screencast 1.1: How to serve HTML files on LAN?
+- Create HTML files in VS Code.
+- Use Live Server extension to launch.
+
+### Screencast 1.1: How to Serve HTML Files on LAN?
+
+- Run `ipconfig` to get local IP.
+- Open local IP on phone.
+- Access live server on phone.
+
