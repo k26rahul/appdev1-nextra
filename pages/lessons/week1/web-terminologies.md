@@ -10,20 +10,20 @@
 
 - **II. Types of Applications**
 
-  - Desktop Applications
+  - **Desktop Applications**
     - Standalone.
-    - Notepad, VS Code, Chrome, VLC, WhatsApp Desktop.
-  - Mobile Applications
+    - Notepad, VS Code, Chrome, VLC, Spotify.
+  - **Mobile Applications**
     - Apps downloaded from app stores (Play Store).
     - Better Internet connectivity.
     - Constraints: memory, processing power, battery.
-    - WhatsApp Mobile app.
-  - Web Applications
+    - Spotify Android App (Play store)
+  - **Web Applications**
     - Dynamic and interactive.
     - Common platform across OS.
-    - WhatsApp Web (web.whatsapp.com).
+    - Spotify Web App (open.spotify.com)
   - Embedded Applications
-    - Smart fridge, Smart POS system.
+    - Smart fridge, Smart POS system
 
 - **III. Development Frameworks**
 
